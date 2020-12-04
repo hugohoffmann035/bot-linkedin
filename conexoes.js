@@ -24,7 +24,7 @@ function startBotConexoes() {
     });
 
     document.querySelectorAll('.search-result__action-button').forEach((item, idx) => {
-      if (item.innerHTML.trim().toLowerCase() != "conectar") {
+      if (item.innerText.trim().toLowerCase() != "conectar") {
         contador--;
         console.log(`${contador} pessoa que talvez você seque!`);
         nextpage()
