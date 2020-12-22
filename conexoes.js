@@ -19,14 +19,13 @@ function startBotConexoes() {
   }
 
   setTimeout(() => {
-    document.querySelectorAll('.search-result__action-button').forEach((item, idx) => {
+    document.querySelectorAll('button[class="artdeco-button artdeco-button--2 artdeco-button--secondary ember-view"]').forEach((item, idx) => {
       contador++;
     });
 
-    document.querySelectorAll('.search-result__action-button').forEach((item, idx) => {
+    document.querySelectorAll('button[class="artdeco-button artdeco-button--2 artdeco-button--secondary ember-view"]').forEach((item, idx) => {
       if (item.innerText.trim().toLowerCase() != "conectar") {
         contador--;
-        console.log(`${contador} pessoa que talvez você seque!`);
         nextpage()
         return;
       }
